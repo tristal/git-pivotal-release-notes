@@ -1,7 +1,7 @@
 Script to generate a simple release text listing git commits linked to pivotal stories (apologies for the hacky script, first time writing Python).
 
 Requires:
- - Github API gem;
+ - Github API gem ([PyGithub](https://pypi.python.org/pypi/PyGithub));
  - Github API key;
  - Pivotal API key;
 
