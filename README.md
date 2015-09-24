@@ -2,8 +2,8 @@ Script to generate a simple release text listing git commits linked to pivotal s
 
 Requires:
  - Github API gem ([PyGithub](https://pypi.python.org/pypi/PyGithub));
- - Github API key;
- - Pivotal API key;
+ - Github API key (https://github.com/settings/tokens);
+ - Pivotal API key (https://www.pivotaltracker.com/profile);
 
 Usage:
 
