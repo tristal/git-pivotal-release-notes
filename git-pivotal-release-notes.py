@@ -63,7 +63,8 @@ def compare_branches_and_build_stories(repo, toBranch, fromBranch, pivotalKey, p
             else:
                 featureIds.add(featureId) # track unique stories
                 pivotalStory = get_feature_name(pivotalKey, pivotalProjects, featureId)
-                results.append(pivotalStory)
+                if pivotalStory is not None:
+                    results.append(pivotalStory)
 
     return results
 
