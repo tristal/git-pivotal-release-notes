@@ -22,7 +22,7 @@ class PivotalStory(object):
         self.projectName = projectName
 
     def printString(pivotalStory):
-        print "\t{0} [#{1}] {2}".format(pivotalStory.projectName, pivotalStory.id, pivotalStory.name)
+        print "\t{0} [#{1}] {2}".format(pivotalStory.projectName, pivotalStory.id, pivotalStory.name.encode("utf-8"))
 
 def getPivotalStorySortKey(pivotalStory):
         return pivotalStory.projectName + pivotalStory.id
