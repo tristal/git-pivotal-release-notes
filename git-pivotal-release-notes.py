@@ -69,15 +69,11 @@ def compare_branches_and_build_stories(repo, toBranch, fromBranch, pivotalKey, p
     return results
 
 def parse_commit(body):
-    match = re.match(r'^\[#(.*)\]', body, 0)
+    match = re.match(r'^\[.*#(.*)\]', body, 0)
     if match:
         return match.group(1)
     else:
-        match = re.match(r'^\[Finishes #(.*)\]', body, 0)
-        if match:
-            return match.group(1)
-        else:
-            return None
+        return None
 
 def get_feature_name(token, pivotalProjects, storyId):
     for pivotalProject in pivotalProjects:
